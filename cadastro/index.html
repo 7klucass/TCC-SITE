@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Braile Tech</title>
+</head>
+<body class="dark-mode">
+       <header>
+        <div class="logo">
+            <img src="../img/LOGO (1).png" alt="">
+        </div>
+
+        <nav>
+            <a href="/index.html" class="active">Home</a>
+            <a href="#">Produto</a>
+            <a href="#">Game</a>
+            <a href="#">Sobre nós</a>
+          </nav>
+
+    </header>
+
+  <div class="container">
+    <div class="toggle-theme">
+      <button id="toggleTheme"></button>
+    </div>
+
+    <div class="form-box">
+      <h1><span>Braille</span> Tech</h1>
+      <h2>Criar Conta</h2>
+      <p>Preencha os dados abaixo para criar sua conta</p>
+
+      <form>
+        <label>Nome Completo</label>
+        <input type="text" placeholder="Seu nome completo" />
+
+        <label>E-mail</label>
+        <input type="email" placeholder="Seu e-mail" />
+
+        <label>Senha</label>
+        <input type="password" placeholder="Sua senha" />
+
+        <label>Confirmar Senha</label>
+        <input type="password" placeholder="Confirmar Senha" />
+
+        <a href="#" class="forgot">Esqueceu sua senha?</a>
+
+        <button type="submit" class="create-btn">Criar Conta</button>
+
+        <div class="divider"><span>ou</span></div>
+
+        <p class="login-link">Já tem uma conta? <a href="../login/index.html">Faça login aqui</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const toggle = document.getElementById("toggleTheme");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("light-mode");
+      body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>

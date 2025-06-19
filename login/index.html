@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body class="dark">
+<body class="dark-mode">
     <header>
         <div class="logo">
             <img src="../img/LOGO (1).png" alt="">
@@ -19,12 +19,14 @@
             <a href="#">Sobre nós</a>
           </nav>
 
-          <button class="download-btn">Download</button>
 
          
     
     </header>
-
+  <div class="container">
+    <div class="toggle-theme">
+      <button id="toggleTheme"></button>
+    </div>
     <div class="container">
         <div class="form-container">
     
@@ -47,8 +49,18 @@
           </form>
     
           <hr />
-          <p>Não tem uma conta? <a href="#" class="register-link">Cadastre-se agora</a></p>
+          <p>Não tem uma conta? <a href="../cadastro/index.html" class="register-link">Cadastre-se agora</a></p>
         </div>
       </div>
+
+        <script>
+    const toggle = document.getElementById("toggleTheme");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("light-mode");
+      body.classList.toggle("dark-mode");
+    });
+  </script>
 </body>
 </html>
