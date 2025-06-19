@@ -25,8 +25,9 @@
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-left: 1.8rem;
-  top: -0.5rem;
+  margin-left: 5rem;
+  top: -1.8rem;
+
 
 }
 
@@ -71,6 +72,22 @@ body.light-mode .theme-toggle::before {
   background-color: white;
 }
 
+.light {
+  display: block;
+}
+
+.dark {
+  display: none;
+}
+
+body.light-mode .light {
+  display: none;
+}
+
+body.light-mode .dark {
+  display: block;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -101,12 +118,17 @@ body{
 }
 
 
-.logo{
+.light{
     padding-left: 1rem;
     margin-top: 1rem;
     
 }
 
+.dark{
+    padding-left: 1rem;
+    margin-top: 1rem;
+    
+}
 
 .menu-icon span {
     width: 6px;
