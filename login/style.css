@@ -14,6 +14,78 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  .theme-toggle {
+  width: 50px;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 1.8rem;
+  top: -0.5rem;
+
+}
+
+.theme-toggle::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: #110F0F;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* Modo Claro */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #2B2828;
+}
+
+body.light-mode nav a,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode p,
+body.light-mode label,
+body.light-mode .options a,
+body.light-mode .register-link {
+  color: #110F0F;  /* Texto escuro no modo claro */
+}
+
+/* Modo Claro - Inputs */
+body.light-mode input {
+  background-color: #f0f0f0;
+  color: #110F0F;
+  border: 1px solid #ccc;
+}
+
+body.light-mode input::placeholder {
+  color: #888;
+}
+
+
+body.light-mode .btn-login {
+  background-color: #CC462A;
+  color: white;
+}
+
+
+body.light-mode .retangulo {
+  background-color: #e0e0e0;
+}
+
+body.light-mode .theme-toggle {
+  background-color: #2B2828;
+}
+
+body.light-mode .theme-toggle::before {
+  transform: translateX(25px);
+  background-color: white;
+}
   
   
   header {
@@ -36,9 +108,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
       transition: background-color 0.3s ease, color 0.3s ease;  
-  
+
+
   }
 
   .logo{
@@ -77,21 +149,7 @@
     text-underline-offset: 4px;
   }
 
-  .download-btn {
-    background-color: #e0e0e0;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-size: 15px;
-  }
 
-  .perfil{
-    padding-left: 80rem;
-    font-weight: 700;
-  }
 
   .container {
     display: flex;
@@ -100,34 +158,35 @@
   }
   
   .form-container {
-    margin-left: 50rem;
+    margin-left: 60rem;
     width: 100%;
     max-width: 500px;
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 23px;
     position: relative;
+    top: -3rem;
   }
   
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     padding-top: 13rem;
     color: white;
   }
   
   .highlight {
-    color: #d54c25;
+    color: #CC462A;
   }
   
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: -10px;
     color: white;
   }
   
   p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     opacity: 0.8;
     color: white;
   }
@@ -142,7 +201,7 @@
   input {
     padding: 10px;
     border: none;
-    border-radius: 6px;
+    border-radius: 9px;
     font-size: 1rem;
     background-color: #2e2e2e;
     color: white;
@@ -164,7 +223,7 @@
   }
   
   .btn-login {
-    background-color: #d54c25;
+    background-color: #CC462A;
     color: white;
     font-weight: bold;
     border: none;
@@ -175,75 +234,22 @@
   }
   
   .register-link {
-    color: #d54c25;
+    color: #CC462A;
     text-decoration: none;
     font-weight: bold;
   }
+
+
+  body.light-mode .btn-login {
+  background-color: #CC462A;  /* Fundo escuro no modo claro */
+  color: white;               /* Texto branco */
+}
+
+body.light-mode .register-link {
+  color: #CC462A;             /* Link "Cadastre-se agora" escuro */
+}
+
+body.light-mode .options a {
+  color: #333;                /* Link "Esqueceu sua senha?" mais escuro */
+}
   
-  .toggle-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-.toggle-theme {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
-
-#toggleTheme {
-  width: 40px;
-  height: 21px;
-  border-radius: 19px;
-  border: none;
-  background-color: #fff;
-  cursor: pointer;
-  position: relative;
-
-  z-index: 1000;
-}
-
-#toggleTheme::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-color: #000;
-  border-radius: 50%;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  transition: all 0.3s;
-}
-
-/* Modo Claro */
-body.light-mode .container {
-  background: #fff;
-  color: #000;
-}
-
-body.light-mode input {
-  background: #f0f0f0;
-  color: #000;
-}
-
-body.light-mode .forgot {
-  color: #666;
-}
-
-body.light-mode .login-link a {
-  color: #e74c3c;
-}
-
-body.light-mode #toggleTheme {
-  background-color: #000;
-}
-
-body.light-mode #toggleTheme::after {
-  background-color: #fff;
-  left: 21px;
-}

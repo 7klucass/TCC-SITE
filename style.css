@@ -63,7 +63,7 @@ body.light-mode .retangulo {
 }
 
 body.light-mode .theme-toggle {
-  background-color: #333;
+  background-color: #110F0F;
 }
 
 body.light-mode .theme-toggle::before {
@@ -139,7 +139,7 @@ body{
 
   .download-btn {
     background-color: #e0e0e0;
-    color: #000;
+    color: #110F0F;
     font-weight: bold;
     border: none;
     border-radius: 6px;
