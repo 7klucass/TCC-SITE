@@ -160,30 +160,3 @@ body{
   font-weight: 400;
   opacity: 67%;
 }
-.cards-container {
-  display: flex;
-  gap: 300px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 40px;
-}
-
-.card {
-  background-color: #201E1E;
-  color: white;
-  border-radius: 30px;
-  padding: 180px;
-  width: 550px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-
-.card h2{
-  font-size: 3rem;
-  padding-left: -30rem;
-}
-.icon {
-  font-size: 30px;
-}
-
