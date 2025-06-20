@@ -171,8 +171,11 @@ body{
   }
 
   .login{
-    padding-left: 97rem;
+    margin-left: 95rem;
     font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
   }
 
 .text2{
