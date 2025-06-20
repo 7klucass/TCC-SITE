@@ -6,6 +6,7 @@
   border: 0;
   overflow-x: hidden;
   font-family: 'PP Neue Montreal', Arial, sans-serif;
+
 }
 
 @font-face {
@@ -242,4 +243,16 @@ body{
   opacity: 67%;
 }
 
+
+.prot{
+  padding-top: 5rem;
+  height: 35rem;
+  padding-left: 6rem;
+}
+
+
+.retangulo2 {
+  padding-top: -80rem;
+  margin-left: 19rem;
+}
 
