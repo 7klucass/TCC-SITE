@@ -1241,6 +1241,7 @@ video {
   border-radius: 12px;
   background: #2a2a2a;
   min-height: 400px;
+  
 }
 
 .product-carousel-track {
@@ -1305,7 +1306,6 @@ video {
   font-weight: 900;
   margin-bottom: 24px;
   line-height: 1.1;
-  color: white;
   letter-spacing: -0.02em;
 }
 

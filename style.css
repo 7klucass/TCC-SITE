@@ -52,6 +52,7 @@ body.light-mode {
 
 body.light-mode nav a,
 body.light-mode .title,
+body.light-mode .login,
 body.light-mode .text2,
 body.light-mode .p1,
 body.light-mode .text3,
@@ -99,7 +100,6 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
-  background: transparent;
   
 }
 
@@ -131,53 +131,45 @@ body{
     
 }
 
-.menu-icon span {
-    width: 6px;
-    height: 6px;
-    background: white;
-    border-radius: 50%;
-    display: block;
-  }
+nav.main-menu {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex: 1;
+}
 
-  nav {
+nav.main-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 23px;
+}
 
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 32px;
-  }
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Espaço entre Login e o botão Download */
+  margin-left: auto;
+}
 
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    font-size: 23px;
-  }
+.login {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  margin-right: 0.2rem; /* Traz um pouco mais pra esquerda */
+}
 
-  nav a.active {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-
-  .download-btn {
-    background-color: #e0e0e0;
-    color: #110F0F;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-size: 15px;
-  }
-
-  .login{
-    margin-left: 95rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: white;
-    font-size: 23px;
-  }
+.download-btn {
+  background-color: #e0e0e0;
+  color: #110F0F;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 15px;
+}
 
 .text2{
   color: white;
@@ -256,3 +248,40 @@ body{
   margin-left: 19rem;
 }
 
+.start-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e0e0e0;
+  color: #c0392b;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  position: absolute;
+  left: 50%;
+  bottom: 10rem; /* Distância do fundo */
+  transform: translateX(-50%);
+    position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.start-btn .arrow {
+  color: black;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.start-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+.start-btn:hover {
+  background-color: #d5d5d5;
+}
