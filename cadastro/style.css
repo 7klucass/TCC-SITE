@@ -182,7 +182,7 @@ body.light-mode .dark {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;  /* Para centralizar verticalmente */
+  height: 100vh;  
 }
   
   .form-container {
