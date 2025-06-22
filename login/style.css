@@ -15,7 +15,7 @@
     font-style: normal;
   }
 
-  .theme-toggle {
+.theme-toggle {
   width: 50px;
   height: 25px;
   background-color: #e0e0e0;
@@ -23,8 +23,9 @@
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-left: 1.8rem;
-  top: -0.5rem;
+  margin-left: 5rem;
+  top: -1.8rem;
+
 
 }
 
@@ -52,6 +53,7 @@ body.light-mode h2,
 body.light-mode p,
 body.light-mode label,
 body.light-mode .options a,
+body.light-mode .login,
 body.light-mode .register-link {
   color: #110F0F;  /* Texto escuro no modo claro */
 }
@@ -149,6 +151,36 @@ body.light-mode .theme-toggle::before {
     text-underline-offset: 4px;
   }
 
+  .light {
+  display: block;
+}
+
+.dark {
+  display: none;
+}
+
+body.light-mode .light {
+  display: none;
+}
+
+body.light-mode .dark {
+  display: block;
+}
+
+
+
+.light{
+    padding-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.dark{
+    padding-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
 
 
   .container {
@@ -168,6 +200,24 @@ body.light-mode .theme-toggle::before {
     position: relative;
     top: -3rem;
   }
+  .login {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  margin-right: 0.9rem; 
+}
+
+.download-btn {
+  background-color: #e0e0e0;
+  color: #110F0F;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 15px;
+}
   
   h1 {
     font-size: 2.9rem;
@@ -195,6 +245,7 @@ body.light-mode .theme-toggle::before {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-weight: 600;
     color: white;
   }
   
@@ -220,6 +271,7 @@ body.light-mode .theme-toggle::before {
     font-size: 0.85rem;
     text-decoration: none;
     color: #bbb;
+  
   }
   
   .btn-login {

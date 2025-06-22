@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <script src="/script.js"></script>
+    <header>
+  <div class="logo">
+    <img src="../img/LOGO (1).png" alt="" class="light">
+    <img src="../img/LOGO DARK.png" alt="" class="dark">
+    <button id="theme-toggle" class="theme-toggle"></button>
+  </div>
+
+  <nav class="main-menu">
+    <a href="../index.html" class="active">Home</a>
+    <a href="#">Produto</a>
+    <a href="#">Game</a>
+    <a href="/Nosso Time/index.html">Sobre nós</a>
+  </nav>
+
+  <div class="right-section">
+    <a href="../login/index.html" class="login">Login</a>
+  </div>
+</header>
+
+
+    <main>
+            <div class="container">
+            <h1 class="page-title">Perfil do usuário</h1>
+            
+            <div class="profile-content">
+                <!-- Card do Perfil -->
+                <div class="profile-card">
+                    <div class="profile-photo">
+                        <img src="../img/image (2).png" alt="Foto do perfil" class="photo-img">
+                    </div>
+                    <h2 class="profile-name">Raphael Veiga</h2>
+                    <button class="edit-photo-btn">Edite sua foto</button>
+                </div>
+
+                <!-- Formulário -->
+                <div class="profile-form">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Primeiro nome</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Sobrenome</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Número</label>
+                                <input type="tel" id="phone" name="phone" placeholder="1234567890" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" name="password" class="form-input">
+                        </div>
+
+                        <button type="submit" class="save-btn">Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
