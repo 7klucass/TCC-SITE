@@ -1,19 +1,97 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    border: 0;
-    overflow-x: hidden;
-    font-family: 'PP Neue Montreal', Arial, sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: 0;
+  font-family: 'PP Neue Montreal', Arial, sans-serif;
+}
 
+body {
+  background-color: #110F0F;
+  font-family: PP Neue Montreal, Arial, sans-serif;
+  overflow-x: hidden;
+}
   @font-face {
     font-family: 'PP Neue Montreal';
     src: url('font/pp-neue-montreal-cufonfonts/') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
+
+.theme-toggle {
+  width: 50px;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 5rem;
+  top: -1.8rem;
+
+
+}
+
+.theme-toggle::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: #110F0F;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+/* Modo Claro */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #2B2828;
+}
+
+body.light-mode nav a,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode p,
+body.light-mode label,
+body.light-mode .options a,
+body.light-mode .login,
+body.light-mode .register-link {
+  color: #110F0F;  /* Texto escuro no modo claro */
+}
+
+/* Modo Claro - Inputs */
+body.light-mode input {
+  background-color: #f0f0f0;
+  color: #110F0F;
+  border: 1px solid #ccc;
+}
+
+body.light-mode input::placeholder {
+  color: #888;
+}
+
+
+body.light-mode .btn-login {
+  background-color: #CC462A;
+  color: white;
+}
+
+
+body.light-mode .retangulo {
+  background-color: #e0e0e0;
+}
+
+body.light-mode .theme-toggle {
+  background-color: #2B2828;
+}
+
+body.light-mode .theme-toggle::before {
+  transform: translateX(25px);
+  background-color: white;
+}
   
   
   header {
@@ -30,13 +108,7 @@
   }
   
   
-  body{
-      background-color: #110F0F;
-      font-family: PP Neue Montreal, Arial, sans-serif;
-        transition: background 0.3s, color 0.3s;
-        min-height: 100vh;
-  
-  }
+
 
   .logo{
     padding-left: 1rem;
@@ -74,180 +146,158 @@
     text-underline-offset: 4px;
   }
 
-  .download-btn {
-    background-color: #e0e0e0;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-size: 15px;
-  }
+  .light {
+  display: block;
+}
 
-  .perfil{
-    padding-left: 80rem;
-    font-weight: 700;
-  }
+.dark {
+  display: none;
+}
+
+body.light-mode .light {
+  display: none;
+}
+
+body.light-mode .dark {
+  display: block;
+}
+
+
+
+.light{
+    padding-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.dark{
+    padding-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: #0d0d0d;
-  color: white;
-  padding: 20px;
-  position: relative;
+  height: 100vh;  /* Para centralizar verticalmente */
 }
+  
+  .form-container {
 
-/* Formulário */
-.form-box {
-  max-width: 400px;
-  width: 100%;
-  background: transparent;
-}
-
-.form-box h1 {
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 2rem;
-}
-
-.form-box h1 span {
-  color: #e74c3c;
-}
-
-.form-box h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.form-box p {
-  text-align: center;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background: #1e1e1e;
-  color: white;
-}
-
-input::placeholder {
-  color: #aaa;
-}
-
-label {
-  font-size: 0.85rem;
-  margin-top: 10px;
-}
-
-.forgot {
-  text-align: right;
-  font-size: 0.8rem;
-  color: #ccc;
+    width: 100%;
+    max-width: 500px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    position: relative;
+    top: -3rem;
+  }
+  .login {
   text-decoration: none;
-  margin-bottom: 20px;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  margin-right: 0.9rem; 
 }
 
-.create-btn {
-  background: #e74c3c;
-  border: none;
-  padding: 12px;
-  color: white;
+.download-btn {
+  background-color: #e0e0e0;
+  color: #110F0F;
   font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.create-btn:hover {
-  background: #c0392b;
-}
-
-.divider {
-  text-align: center;
-  margin: 15px 0;
-  font-size: 0.85rem;
-  color: #aaa;
-}
-
-.login-link {
-  text-align: center;
-  font-size: 0.85rem;
-}
-
-.login-link a {
-  color: #e74c3c;
-  text-decoration: none;
-}
-
-/* Botão de tema */
-.toggle-theme {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-}
-
-#toggleTheme {
-  width: 40px;
-  height: 21px;
-  border-radius: 19px;
   border: none;
-  background-color: #fff;
+  border-radius: 6px;
+  padding: 8px 16px;
   cursor: pointer;
-  position: relative;
+  font-size: 15px;
+}
+  
+  h1 {
+    font-size: 2.9rem;
+    padding-top: 13rem;
+    color: white;
+  }
+  
+  .highlight {
+    color: #CC462A;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: -10px;
+    color: white;
+  }
+  
+  p {
+    font-size: 1rem;
+    opacity: 0.8;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  input {
+    padding: 10px;
+    border: none;
+    border-radius: 9px;
+    font-size: 1rem;
+    background-color: #2e2e2e;
+    color: white;
+  }
+  
+  input::placeholder {
+    opacity: 0.7;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .options a {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #bbb;
+  
+  }
+  
+  .btn-login {
+    background-color: #CC462A;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .register-link {
+    color: #CC462A;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-  z-index: 1000;
+
+  body.light-mode .btn-login {
+  background-color: #CC462A;  /* Fundo escuro no modo claro */
+  color: white;               /* Texto branco */
 }
 
-#toggleTheme::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-color: #000;
-  border-radius: 50%;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  transition: all 0.3s;
+body.light-mode .register-link {
+  color: #CC462A;             /* Link "Cadastre-se agora" escuro */
 }
 
-/* Modo Claro */
-body.light-mode .container {
-  background: #fff;
-  color: #000;
+body.light-mode .options a {
+  color: #333;                /* Link "Esqueceu sua senha?" mais escuro */
 }
-
-body.light-mode input {
-  background: #f0f0f0;
-  color: #000;
-}
-
-body.light-mode .forgot {
-  color: #666;
-}
-
-body.light-mode .login-link a {
-  color: #e74c3c;
-}
-
-body.light-mode #toggleTheme {
-  background-color: #000;
-}
-
-body.light-mode #toggleTheme::after {
-  background-color: #fff;
-  left: 21px;
-}
+  
