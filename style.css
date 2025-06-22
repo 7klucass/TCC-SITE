@@ -292,3 +292,721 @@ nav.main-menu a.active {
 .start-btn:hover {
   background-color: #d5d5d5;
 }
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  header {
+    padding: 12px 24px;
+  }
+
+  .theme-toggle {
+    margin-left: 3rem;
+    top: -1.5rem;
+  }
+
+  nav.main-menu {
+    gap: 28px;
+  }
+
+  nav.main-menu a {
+    font-size: 21px;
+  }
+
+  .login {
+    font-size: 21px;
+  }
+
+  .title {
+    font-size: 5rem;
+    margin-top: 20rem;
+    padding-left: 50rem;
+  }
+
+  .text2 {
+    font-size: 4rem;
+    padding: 0 2rem;
+  }
+
+  .p1 {
+    font-size: 1.6rem;
+    top: -20rem;
+    padding: 0 2rem;
+  }
+
+  .retangulo {
+    width: 250rem;
+    height: 35rem;
+  }
+
+  .text3 {
+    font-size: 4rem;
+    top: -9rem;
+    padding: 0 2rem;
+  }
+
+  .text4 {
+    font-size: 2.1rem;
+    top: -58rem;
+    padding: 0 2rem;
+  }
+
+  .p2 {
+    font-size: 1.6rem;
+    top: -80rem;
+    padding: 0 2rem;
+  }
+
+  .prot {
+    padding-left: 4rem;
+    height: 30rem;
+  }
+
+  .retangulo2 {
+    margin-left: 15rem;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE (até 767px) */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 8px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .theme-toggle {
+    margin-left: 0;
+    top: 0;
+    order: 3;
+    margin-top: 1rem;
+  }
+
+  nav.main-menu {
+    gap: 16px;
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  nav.main-menu a {
+    font-size: 16px;
+  }
+
+  .right-section {
+    order: 1;
+    margin-left: 0;
+    gap: 12px;
+  }
+
+  .login {
+    font-size: 16px;
+  }
+
+  .download-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .title {
+    font-size: 2.8rem;
+    margin-top: 12rem;
+    padding-left: 0;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .text2 {
+    font-size: 2.8rem;
+    padding: 0 1rem;
+    height: 80vh;
+  }
+
+  .p1 {
+    font-size: 1.3rem;
+    top: -15rem;
+    padding: 0 1rem;
+  }
+
+  .retangulo {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .text3 {
+    font-size: 2.8rem;
+    top: -6rem;
+    padding: 0 1rem;
+    height: 80vh;
+  }
+
+  .text4 {
+    font-size: 1.6rem;
+    top: -40rem;
+    padding: 0 1rem;
+    height: 80vh;
+  }
+
+  .p2 {
+    font-size: 1.3rem;
+    top: -55rem;
+    padding: 0 1rem;
+  }
+
+  .prot {
+    padding-left: 1rem;
+    height: 20rem;
+    padding-top: 2rem;
+  }
+
+  .retangulo2 {
+    margin-left: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+
+  .start-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    bottom: 1rem;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE PEQUENO (até 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 6px 12px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    margin-top: 10rem;
+  }
+
+  .text2 {
+    font-size: 2.2rem;
+  }
+
+  .p1 {
+    font-size: 1.1rem;
+    top: -12rem;
+  }
+
+  .retangulo {
+    height: 20rem;
+  }
+
+  .text3 {
+    font-size: 2.2rem;
+    top: -4rem;
+  }
+
+  .text4 {
+    font-size: 1.3rem;
+    top: -30rem;
+  }
+
+  .p2 {
+    font-size: 1.1rem;
+    top: -40rem;
+  }
+
+  nav.main-menu a {
+    font-size: 14px;
+  }
+
+  .login {
+    font-size: 14px;
+  }
+
+  .download-btn {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .start-btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .prot {
+    height: 15rem;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE MUITO PEQUENO (até 360px) */
+@media screen and (min-width: 1920px) {
+  .title {
+    right: 20%;
+    font-size: 7rem;
+  }
+}
+
+/* Para desktops médios (1440px - 1919px) */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .title {
+    right: 18%;
+    font-size: 6rem;
+  }
+}
+
+/* Para desktops pequenos (1024px - 1439px) */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .title {
+    right: 15%;
+    font-size: 5rem;
+  }
+}
+
+.light {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.dark {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+nav.main-menu {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex: 1;
+}
+
+nav.main-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: 23px;
+}
+
+nav.main-menu a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.login {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  font-weight: 700;
+  margin-right: 0.2rem;
+}
+
+.download-btn {
+  background-color: #e0e0e0;
+  color: #110f0f;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.text2 {
+  color: white;
+  font-size: 4.7rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.p1 {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -23rem;
+  font-weight: 400;
+  opacity: 67%;
+}
+
+.retangulo {
+  width: 300rem;
+  height: 40rem;
+  background-color: #272626;
+}
+
+.text3 {
+  color: white;
+  font-size: 4.7rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  top: -11rem;
+}
+
+.text4 {
+  color: white;
+  font-size: 2.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  top: -66rem;
+  font-weight: 300;
+}
+
+.p2 {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -90rem;
+  font-weight: 400;
+  opacity: 67%;
+}
+
+.prot {
+  padding-top: 5rem;
+  height: 35rem;
+  padding-left: 6rem;
+}
+
+.retangulo2 {
+  padding-top: -80rem;
+  margin-left: 19rem;
+}
+
+.start-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e0e0e0;
+  color: #c0392b;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.start-btn .arrow {
+  color: black;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.start-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+.start-btn:hover {
+  background-color: #d5d5d5;
+}
+
+/* RESPONSIVIDADE - TABLETS (768px - 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  header {
+    padding: 12px 24px;
+  }
+
+  .theme-toggle {
+    margin-left: 3rem;
+    top: -1.5rem;
+  }
+
+  nav.main-menu {
+    gap: 28px;
+  }
+
+  nav.main-menu a {
+    font-size: 21px;
+  }
+
+  .login {
+    font-size: 21px;
+  }
+
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4rem;
+    right: auto;
+  }
+
+  .text2 {
+    font-size: 4rem;
+    padding: 0 2rem;
+  }
+
+  .p1 {
+    font-size: 1.6rem;
+    top: -20rem;
+    padding: 0 2rem;
+  }
+
+  .retangulo {
+    width: 250rem;
+    height: 35rem;
+  }
+
+  .text3 {
+    font-size: 4rem;
+    top: -9rem;
+    padding: 0 2rem;
+  }
+
+  .text4 {
+    font-size: 2.1rem;
+    top: -58rem;
+    padding: 0 2rem;
+  }
+
+  .p2 {
+    font-size: 1.6rem;
+    top: -80rem;
+    padding: 0 2rem;
+  }
+
+  .prot {
+    padding-left: 4rem;
+    height: 30rem;
+  }
+
+  .retangulo2 {
+    margin-left: 15rem;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE (até 767px) */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 8px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .theme-toggle {
+    margin-left: 0;
+    top: 0;
+    order: 3;
+    margin-top: 1rem;
+  }
+
+  nav.main-menu {
+    gap: 16px;
+    order: 2;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  nav.main-menu a {
+    font-size: 16px;
+  }
+
+  .right-section {
+    order: 1;
+    margin-left: 0;
+    gap: 12px;
+  }
+
+  .login {
+    font-size: 16px;
+  }
+
+  .download-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: clamp(2rem, 6vw, 4rem);
+    white-space: normal;
+    max-width: 90vw;
+    right: auto;
+  }
+
+  .text2 {
+    font-size: 2.8rem;
+    padding: 0 1rem;
+    height: 80vh;
+  }
+
+  .p1 {
+    font-size: 1.3rem;
+    top: -15rem;
+    padding: 0 1rem;
+  }
+
+  .retangulo {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .text3 {
+    font-size: 2.8rem;
+    top: -6rem;
+    padding: 0 1rem;
+    height: 80vh;
+  }
+
+  .text4 {
+    font-size: 1.6rem;
+    top: -40rem;
+    padding: 0 1rem;
+    height: 80vh;
+  }
+
+  .p2 {
+    font-size: 1.3rem;
+    top: -55rem;
+    padding: 0 1rem;
+  }
+
+  .prot {
+    padding-left: 1rem;
+    height: 20rem;
+    padding-top: 2rem;
+  }
+
+  .retangulo2 {
+    margin-left: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+
+  .start-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    bottom: 1rem;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE PEQUENO (até 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 6px 12px;
+  }
+
+  .title {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+  }
+
+  .text2 {
+    font-size: 2.2rem;
+  }
+
+  .p1 {
+    font-size: 1.1rem;
+    top: -12rem;
+  }
+
+  .retangulo {
+    height: 20rem;
+  }
+
+  .text3 {
+    font-size: 2.2rem;
+    top: -4rem;
+  }
+
+  .text4 {
+    font-size: 1.3rem;
+    top: -30rem;
+  }
+
+  .p2 {
+    font-size: 1.1rem;
+    top: -40rem;
+  }
+
+  nav.main-menu a {
+    font-size: 14px;
+  }
+
+  .login {
+    font-size: 14px;
+  }
+
+  .download-btn {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .start-btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .prot {
+    height: 15rem;
+  }
+}
+
+/* RESPONSIVIDADE - MOBILE MUITO PEQUENO (até 360px) */
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+  }
+
+  .text2 {
+    font-size: 1.8rem;
+  }
+
+  .text3 {
+    font-size: 1.8rem;
+  }
+
+  .text4 {
+    font-size: 1.1rem;
+  }
+
+  .p1,
+  .p2 {
+    font-size: 1rem;
+  }
+
+  nav.main-menu {
+    gap: 12px;
+  }
+
+  nav.main-menu a {
+    font-size: 13px;
+  }
+
+  .login {
+    font-size: 13px;
+  }
+
+  .retangulo {
+    height: 15rem;
+  }
+}

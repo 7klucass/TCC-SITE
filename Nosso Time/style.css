@@ -144,70 +144,6 @@ body{
     text-decoration: underline;
     text-underline-offset: 4px;
   }
-.text2{
-  color: white;
-  font-size: 4.7rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;      
-  height: 100vh; 
-}
-.p1{
-  color: white;
-  font-size: 1.8rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;    
-  position: relative;
-  top: -23rem;
-  font-weight: 400;
-  opacity: 67%;
-}
-
-.retangulo {
-  width: 300rem;    
-  height: 40rem;    
-  background-color: #272626; 
-}
-
-.text3{
-  color: white;
-  font-size: 4.7rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;      
-  height: 100vh; 
-  position: relative;
-  top: -11rem;
-}
-
-.text4{
-  color: white;
-  font-size: 2.3rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;      
-  height: 100vh; 
-  position: relative;
-  top: -66rem;
-  font-weight: 300;
-}
-
-.p2{
-  color: white;
-  font-size: 1.8rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;    
-  position: relative;
-  top: -90rem;
-  font-weight: 400;
-  opacity: 67%;
-}
-
 
 
 .container {
@@ -218,8 +154,8 @@ body{
 
 /* ===== SEÇÃO DO TIME ===== */
 .team-section {
-    padding: 80px 0;
-    background-color: #e8e8e8;
+    padding: 180px 0;
+    background-color: #110F0F;
 }
 
 .team-title {
@@ -228,23 +164,24 @@ body{
 }
 
 .team-title h1 {
-    font-size: 3rem;
+    font-size: 4.4rem;
     font-weight: bold;
-    color: #4a4a4a;
+    color: white;
+    opacity: 84%;
     margin-bottom: 10px;
 }
 
 .team-title p {
-    font-size: 1.1rem;
-    color: #888;
+    font-size: 1.6rem;
+    color: white;
+    opacity: 80%;
 }
 
 .team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px 80px;
-    margin-top: 60px;
-    max-width: 1000px;
+    gap: 160px 250px;  /* Aumentando o espaço entre colunas */
+    max-width: 1200px;  /* Também pode aumentar o max-width */
     margin-left: auto;
     margin-right: auto;
 }
@@ -253,15 +190,10 @@ body{
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    
 }
 
-.member-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #888;
-    flex-shrink: 0;
-}
+
 
 .member-info {
     flex: 1;
@@ -270,13 +202,14 @@ body{
 .member-info h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #4a4a4a;
+    color: white;
     margin-bottom: 5px;
 }
 
 .member-info .role {
     font-size: 1rem;
-    color: #888;
+    color: white;
+    opacity: 80%;
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
@@ -284,7 +217,7 @@ body{
 
 .member-info .description {
     font-size: 0.95rem;
-    color: #666;
+    color: white;
     margin-bottom: 15px;
     line-height: 1.5;
 }
@@ -298,7 +231,7 @@ body{
 /* ===== SEÇÃO DE CONTATO ===== */
 .contact-section {
     padding: 80px 0;
-    background-color: #d0d0d0;
+    background-color: #1D1C1C;
 }
 
 .contact-container {
@@ -312,13 +245,14 @@ body{
 .contact-info h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #4a4a4a;
+    color: white;
     margin-bottom: 20px;
 }
 
 .contact-info p {
-    color: #666;
+    color: white;
     margin-bottom: 40px;
+    font-weight: 400;
     line-height: 1.6;
 }
 
@@ -332,7 +266,7 @@ body{
     display: flex;
     align-items: center;
     gap: 15px;
-    color: #4a4a4a;
+    color: white;
     font-weight: 500;
 }
 
@@ -363,6 +297,7 @@ body{
     color: #ccc;
     font-size: 0.9rem;
     margin-bottom: 30px;
+    font-weight: 400;
 }
 
 .form-row {
